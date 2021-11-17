@@ -1,0 +1,19 @@
+print("Programa que cuenta cuantas veces sale una palabra en una frase introducida por teclado:")
+
+
+"""frase que introduciré: hola me llamo santiago y el otro día cumplí dieciocho años"""
+
+"""palabras introducidas en el diccionario"""
+
+palabras = ["la", "el","día", "hola", "me", "santiago", "y", "llamo", "tengo", "dieciocho", "años", "otro", "cumplí"]
+lista_palabras = input("Escribe una frase:")
+lista_palabras =lista_palabras.split(' ')
+
+if lista_palabras == "fin":
+    print("Proceso finalizado.")
+else:
+    vfreq = {"la":0, "el":0 , "día":0, "hola":0, "me":0, "santiago":0, "y":0, "llamo":0, "tengo":0,"dieciocho":0, "años":0, "otro":0, "cumplí":0}
+    for palabras in lista_palabras:
+        if palabras in lista_palabras:
+            vfreq[palabras] +=1
+    print("Frecuencia de repetición de los digitos en {numero_introducido}:\n{vfreq}",lista_palabras,vfreq)
